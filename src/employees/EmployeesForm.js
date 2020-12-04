@@ -89,7 +89,7 @@ export default class EmployeesForm extends Component {
                 <div className="row">
                     {
                         this.state.totalEmailInputs.map((e,i)=>{
-                            return <InputControl name="email" label="Contact Email" />
+                            return <InputControl name={`email${i}`} label="Contact Email" />
                         })
                     }
                     
@@ -105,7 +105,7 @@ export default class EmployeesForm extends Component {
                 <div className="row">
                 {
                         this.state.totalPhoneInputs.map((e,i)=>{
-                            return <InputControl name="phone" label="Contact Phone" />
+                            return <InputControl name={`phone${i}`} label="Contact Phone" />
                         })
                     }
                     <div className="small-btn float-right">
